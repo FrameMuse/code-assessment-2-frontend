@@ -2,6 +2,15 @@
 
 [Used template](https://github.com/FrameMuse/react-template) with minor updates, which means a bit changed template.
 
+## Testing
+
+```bash
+# Run test suit
+$ npm run test
+# Run test suit with coverage
+$ npm run test:cov
+```
+
 ## Docker
 
 There is configuration [`Dockerfile`](./Dockerfile).
