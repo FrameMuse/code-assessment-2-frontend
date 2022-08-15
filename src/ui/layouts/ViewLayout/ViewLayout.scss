@@ -1,0 +1,10 @@
+@import "~assets/scss/bundle.scss";
+
+.view-layout {
+  max-width: 900px;
+  margin: 2.5em auto 0;
+
+  border: 1px solid rgba(black, 0.2);
+  border-radius: 0.5em;
+  overflow: hidden;
+}

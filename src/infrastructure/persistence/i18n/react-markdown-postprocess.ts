@@ -1,12 +1,12 @@
 // import { ReactElement } from "react"
 // import ReactMarkdown from "react-markdown"
 
-import OuterLink from "app/ui/OuterLink/OuterLink"
 import { TOptions } from "i18next"
 import type { marked } from "marked"
 import { Lexer } from "marked"
 import { createElement, Key, ReactNode } from "react"
 import { Link } from "react-router-dom"
+import OuterLink from "ui/OuterLink/OuterLink"
 
 interface ReactPostProcessorModule {
   name: string

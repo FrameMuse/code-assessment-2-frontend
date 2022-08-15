@@ -59,9 +59,9 @@ function hasResponseError(response: Response): boolean {
 function responseErrorHandling(response: Response) {
   if (response.status === 401) {
     localStorage.removeItem("token")
-    toast.error("Что-то не так с авторизацией")
-    toast.info("Токен был сброшен, авторизуйтесь ещё раз")
     store.dispatch(updateUser({ auth: false }))
+
+    toast.info("Log in one more time please")
   }
   toast.error(response.payload?.error.codes)
   return { ...response, error: true }
