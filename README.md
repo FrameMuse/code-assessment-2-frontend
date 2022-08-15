@@ -1,32 +1,14 @@
-# Template of Typescript React App
-[![Lighthouse CI](actions/workflows/Lighthouse.yml/badge.svg?event=deployment_status)](actions/workflows/Lighthouse.yml)
+# Code assessment (Frontend)
 
-## Guidelines
+## Docker
 
-[Issue guidelines](https://github.com/FrameMuse/issue-guidelines)
+There is configuration [`Dockerfile`](./Dockerfile).
 
-## Adoptation
+To build and run image for production
 
-This template was wriiten with an idea kept in mind, that it will be used along with `Django` or `Laravel`
-
-Includes:
-
-- `lodash`
-- `redux` with `redux-thunk`
-
-Modules:
-
-- Modal
-- Localization
-
-Predefined:
-
-- `.eslintrc`
-- `.editorconfig`
-- `.gitignore`
-- `tsconfig.json`
-
-## Useful packages
-
-- `Fuse` - For searching values
-- `recoil` - For compact contexts
+```bash
+# Build image with production target
+$ docker build ./ --target production
+# Run image
+$ docker run [IMAGE]
+```
