@@ -2,7 +2,7 @@ import { LoadingButton } from "@mui/lab"
 import { TextField } from "@mui/material"
 import { DesktopDatePicker } from "@mui/x-date-pickers/DesktopDatePicker"
 import { FormEvent, useState } from "react"
-import Form, { FormState, FormSubmit } from "ui/Form/Form"
+import Form, { FormState, FormSubmit } from "ui/components/Form/Form"
 
 enum StatisticsFormFields {
   date = "date",
